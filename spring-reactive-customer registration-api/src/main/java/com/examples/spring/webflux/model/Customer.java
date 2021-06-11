@@ -1,7 +1,10 @@
 package com.examples.spring.webflux.model;
 
+import org.springframework.data.annotation.Id;
+
 public class Customer {
 
+	@Id
 	private Integer id;
 	private String name;
 	private String address;

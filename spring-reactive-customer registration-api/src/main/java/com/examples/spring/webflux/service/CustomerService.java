@@ -9,6 +9,6 @@ public interface CustomerService {
 	public Flux<Customer> getAllCustomers();
 	public Mono<Customer> getCustomer(Integer empId);
 	public Mono<Customer> createCustomer(Customer employee);
-	public void updateCustomer(Customer employee);
-	public void deleteCustomer(Integer empId);
+	public Mono<Boolean> updateCustomer(Customer employee);
+	public Mono<Boolean> deleteCustomer(Integer empId);
 }
